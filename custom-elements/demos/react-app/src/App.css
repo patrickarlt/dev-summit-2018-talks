@@ -1,0 +1,39 @@
+html, body, .wrapper {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.map {
+  flex: 2 1 auto;
+  position: relative;
+}
+
+.sidebar {
+  min-width: 300px;
+  flex: 1 1 auto;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+arcgis-web-map {
+  width: 100%;
+  height: 100%;
+}
+
+arcgis-layer-list {
+  width: 100%;
+}
+
+arcgis-basemap-toggle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 1;
+}
