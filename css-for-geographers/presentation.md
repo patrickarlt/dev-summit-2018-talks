@@ -1,10 +1,8 @@
 <!-- .slide: data-background="../template/img/bg-1.png" -->
 
-# CSS For Geographers
-
-Patrick Arlt | [@patrickarlt](https://twitter.com/patrickarlt)
-
-Slides: http://bit.ly/2le4IJe
+<h1 style="text-align: left; font-size: 80px;">CSS for Geographers</h1>
+<p style="text-align: left; font-size: 30px;">Patrick Arlt | <a href="https://twitter.com/patrickarlt">@patrickarlt</a></p>
+<p style="text-align: left; font-size: 30px;">Slides: | <a href="http://bit.ly/2CF5kQw">http://bit.ly/2CF5kQw</a></p>
 
 ---
 
@@ -482,19 +480,12 @@ Right click on something you want to change click "Inspect Element"
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/bg-final.jpg" -->
 
-# Thank You!
+<img src="../template/img/esri-science-logo-white.png" style="margin: 0; background: none; border: 0px; box-shadow: none;" />
 
-* Slides - http://bit.ly/2le4IJe
-
-### Leave Feedback
-
-* Download the Esri Events App
-* Go to Dev Summit
-* Select "CSS for Geographers"
-* Leave a Review!
-
----
-
-<!-- .slide: data-background="../template/img/bg-final.png" -->
+* Slides at http://bit.ly/2CF5kQw
+* Leave a Review:
+  * Esri Events App
+  * Dev Summit
+  * CSS for Geographers

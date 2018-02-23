@@ -23,10 +23,21 @@ $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
 
+$linkColor: #f1f514;
+$linkColorHover: #3b2261;
+
 $heading1Size: 2.074em;
 $heading2Size: 1.728em;
 $heading3Size: 1.44em;
 $heading4Size: 1em;
+$selectionBackgroundColor: rgba(0, 0, 0, 0.5);
+
+.reveal a {
+  text-shadow: 2px 2px 2px #2976cc;
+  &:hover {
+    text-shadow: 2px 2px 2px #2976cc;
+  }
+}
 
 @mixin gradient-bg() {
   /* http://colorzilla.com/gradient-editor/#0192ff+15,0192ff+15,6beac7+100 */
@@ -55,10 +66,6 @@ $heading4Size: 1em;
 @mixin bodyBackground() {
   @include gradient-bg();
 }
-
-$linkColor: rgba(192, 232, 255, 1);
-$linkColorHover: lighten($linkColor, 20%);
-$selectionBackgroundColor: rgba(0, 0, 0, 0.5);
 
 // Theme template ------------------------------
 @import "../template/theme";
