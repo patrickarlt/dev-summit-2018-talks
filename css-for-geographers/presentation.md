@@ -2,7 +2,7 @@
 
 <h1 style="text-align: left; font-size: 80px;">CSS for Geographers</h1>
 <p style="text-align: left; font-size: 30px;">Patrick Arlt | <a href="https://twitter.com/patrickarlt">@patrickarlt</a></p>
-<p style="text-align: left; font-size: 30px;">Slides: | <a href="http://bit.ly/2CF5kQw">http://bit.ly/2CF5kQw</a></p>
+<p style="text-align: left; font-size: 30px;">Slides | <a href="http://bit.ly/2CF5kQw">http://bit.ly/2CF5kQw</a></p>
 
 ---
 
@@ -365,6 +365,20 @@ Right click on something you want to change click "Inspect Element"
 
 <!-- .slide: data-background="../template/img/bg-4.png" -->
 
+<h2><a href="http://jsbin.com/joziniv/edit?html,output">CSS Grid</a></h2>
+
+<ul>
+  <li><a href="http://cssgridgarden.com/">Grid Garden</a></li>
+  <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid</a></li>
+    <li><a href="https://gridbyexample.com/">Grid by Example</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">Debugging Grid Layouts</a></li></ul>
+
+<p><a href="http://jsbin.com/zuwarus/edit?html,output">Bonus Demo: CSS Grid Template Areas</a></p>
+
+---
+
+<!-- .slide: data-background="../template/img/bg-4.png" -->
+
 <h2><a href="http://jsbin.com/pitemo/4/edit">Margin, Padding and Borders</a></h2>
 
 <ul>
@@ -450,6 +464,7 @@ Right click on something you want to change click "Inspect Element"
 <p>Sometime browsers will add experimental or early support for a new standard. They will often add a prefix like <code>-webkit-</code>, <code>-moz-</code> or <code>-ms-</code> to a property or value.</p>
 <p>Sites like <a href="http://caniuse.com/flexbox">Can I Use?</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">MDN</a> to check if browsers support a specific property.</p>
 <p>Tools like <a href="https://autoprefixer.github.io/">Autoprefixer</a> to add prefixes automatically.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"></code>@supports</code></a> was introduced with CSS grid to check for support of new features.</p>
 
 ---
 
@@ -469,14 +484,6 @@ Right click on something you want to change click "Inspect Element"
 * Keep selectors as simple as possible
 * Don't use tools until you are familiar with the basics
 * Watch out for the size of web fonts
-
----
-
-# More `_______` for Geographers
-
-* Git/Github for Geographers<br>Wednesday 5:30pm, Santa Rosa
-* JavaScript for Geographers<br>Thursday 9am, Demo Theater 1 - Oasis 1
-* CSS for Geographers<br>Friday 1pm, Pasadena-Sierra-Ventura
 
 ---
 
