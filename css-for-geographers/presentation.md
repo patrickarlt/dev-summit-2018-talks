@@ -248,7 +248,7 @@ In a specificity tie the last loaded rule wins.
 
 Right click on something you want to change click "Inspect Element"
 
-[Explore a Storymap](http://storymaps.esri.com/stories/2015/living-wage-map/)
+[Explore a Storymap](https://story.maps.arcgis.com/apps/Cascade/index.html?appid=46daf1304a0c4ad69a8935c7ed2ab692)
 
 ---
 

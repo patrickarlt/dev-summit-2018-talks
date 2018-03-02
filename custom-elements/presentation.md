@@ -1,3 +1,34 @@
+ <!--
+  3rd year of this talk
+  <customelements are="awesome"></custom-elements>
+
+  2016 - new custom elements v1 spec, shadow dom v1 spec, 1 non-Chrome browser will impliment both
+  2017 - Safari AND FF support custom elements v1 and shadow dom v1
+  2018 - Shadow DOM and custom elements in Edge, FF unflags shadow DOM
+
+  also 2018 frameworks are embracing custom elements
+
+  * Dojo 2
+    * Dojo CLI: Dojo 2 Widget > Custom Element (alpha)
+  * Vue
+    * https://github.com/vuejs/vue-web-component-wrapper
+    * https://github.com/karol-f/vue-custom-element
+    * Use w/ Vue CLI 3 (in beta)
+  * Angular
+    * Angular Elements (in alpha)
+  * Polymer 3 (beta)
+    * HTML Imports > ES Modules
+    * bower > npm
+  * React
+    * React 16 No longer whitelists HTML attributes https://reactjs.org/blog/2017/09/08/dom-attributes-in-react-16.html
+
+  2019 - You can use components authored in different frameworks in your framework :scream:
+
+  In the future - Write componet in your chosen framework > Export custom element > Anyoen can use your custom element in
+
+  The framework wars peace talks
+-->
+
 <!-- .slide: data-background="../template/img/bg-1.png" -->
 
 <h1 style="text-align: left; font-size: 80px;">Custom Elements<br>and Shadow DOM</h1>
