@@ -1,33 +1,3 @@
- <!--
-  3rd year of this talk
-  <customelements are="awesome"></custom-elements>
-
-  2016 - new custom elements v1 spec, shadow dom v1 spec, 1 non-Chrome browser will impliment both
-  2017 - Safari AND FF support custom elements v1 and shadow dom v1
-  2018 - Shadow DOM and custom elements in Edge, FF unflags shadow DOM
-
-  also 2018 frameworks are embracing custom elements
-
-  * Dojo 2
-    * Dojo CLI: Dojo 2 Widget > Custom Element (alpha)
-  * Vue
-    * https://github.com/vuejs/vue-web-component-wrapper
-    * https://github.com/karol-f/vue-custom-element
-    * Use w/ Vue CLI 3 (in beta)
-  * Angular
-    * Angular Elements (in alpha)
-  * Polymer 3 (beta)
-    * HTML Imports > ES Modules
-    * bower > npm
-  * React
-    * React 16 No longer whitelists HTML attributes https://reactjs.org/blog/2017/09/08/dom-attributes-in-react-16.html
-
-  2019 - You can use components authored in different frameworks in your framework :scream:
-
-  In the future - Write componet in your chosen framework > Export custom element > Anyoen can use your custom element in
-
-  The framework wars peace talks
--->
 
 <!-- .slide: data-background="../template/img/bg-1.png" -->
 
@@ -40,124 +10,122 @@
 
 <!-- .slide: data-background="../template/img/bg-2.png" -->
 
-I'm starting to notice something about JavaScript Frameworks&hellip;
+# Custom Elements
 
----
-
-<!-- .slide: data-background="../template/img/bg-2.png" -->
-
-```html
-<!-- Angular 2 -->
-<delete-button [item]="..." (click)="..."></delete-button>
-```
+* Create custom types of DOM Nodes
+* Standardized component interface
 
 ```html
-<!-- Vue JS -->
-<delete-button item="..." v-on:click="..."><delete-button>
-```
-
-```html
-<!-- Ember -->
-{{delete-button item="..." onclick="..."}}
-```
-
-```html
-<!-- React -->
-<DeleteButton item="..." onClick="..." />
+<my-button text="Send"></my-button>
+<button is="my-button">Send</button>
 ```
 
 ---
 
 <!-- .slide: data-background="../template/img/bg-2.png" -->
 
-## Trees of Components&hellip;
+# Shadow DOM
 
-* Manage a tree of components
-* Pass data down
-* Listen for events up
+* Isolate component DOM from page DOM
+* `<slot>` for composing DOM
 
 ---
 
 <!-- .slide: data-background="../template/img/bg-2.png" -->
 
-## Wait a sec isn't this just the DOM?
+3rd year of this talk
+
+* 2016 - Custom Elements and Shadow DOM v1
+* 2017 - Firefox and Safari add support
+* 2018 - ???
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/bg-2.png" -->
 
-## Enter Web Components
+# What Custom Elements and Shadow DOM matter
 
-Web Components allow creating custom HTML tags like our <br>`<delete-button>`. But without a framework.
-
----
-
-<!-- .slide: data-background="../template/img/bg-4.png" -->
-
-## Why Web Components
-
-Write components once, consume in any framework. Abstract differences in systems via HTML.
+* Framework interoperability
+* Browser optimization
+* Modular isolated components
 
 ---
 
-<!-- .slide: data-background="../template/img/bg-4.png" -->
+<!-- .slide: data-background="../template/img/bg-2.png" -->
 
-## The Web Component Standards
+# A Simple Component
 
-* Custom Elements
-* Shadow DOM
-* Templates
-* HTML Imports
-
----
-
-<!-- .slide: data-background="../template/img/bg-4.png" -->
-
-### Custom Elements
-
-Register custom HTML tags with the browser.
-
----
-
-<!-- .slide: data-background="../template/img/bg-4.png" -->
-
-```js
-class MyElement extends HTMLElement {
-  // return an array of the attribute names you want to watch for changes.
-  static get observedAttributes() {
-    return ["attribute"];
-  }
-
-  // called when the element is first created. You must call `super()`
-  constructor() {
-    super();
-  }
-
-  // called when the element is added to the DOM
-  connectedCallback() {}
-
-  // called when the element is removed from the DOM
-  disconnectedCallback() {}
-
-  // called when one of your `observedAttributes` changes
-  attributeChangedCallback(attr, oldValue, newValue) {}
-}
-
-// first parameter is the tag name, second is the class
-customElements.define("my-element", MyElement);
+```
+<copyable-text value="Copy Me!">Click to Copy</copyable-text>
 ```
 
 ---
 
+<!-- .slide: data-background="../template/img/bg-2.png" -->
+
+# So 2018?
+
+* Custom Elements and Shadow DOM in all browsers
+* All frameworks can fully consume Custom Elements
+* Can authors Custom Elements with some frameworks
+
+---
+
 <!-- .slide: data-background="../template/img/bg-4.png" -->
 
-### Custom Element and The JS API
+## Browser Support
 
-By combining custom elements and the JS API we can make reusable mapping components that we can custom HTML Elements and share across frameworks.
+* Chrome - Full Support
+* Firefox - Supported behind flag
+* Safari - Full Support
+* Edge - High Priority/In Development
 
-* `<arcgis-web-map>` - [Demo](./demos/custom-elements-map.html)
-* `<arcgis-layer-list>` - [Demo](./demos/custom-elements-layer-list.html)
-* `<arcgis-basemap-toggle>` - [Demo](./demos/custom-elements-basemap-toggle.html)
+---
+
+<!-- .slide: data-background="../template/img/bg-4.png" -->
+
+## Framework Support
+
+All major frameworks (React, Vue, Angular, ect&hellip;) support integrating all aspects of Custom Elements and Shadow DOM.
+
+Major Web Component frameworks (Polymer, Stencil, SkateJS) are unifying around NPM and ES6 Modules.
+
+---
+
+<!-- .slide: data-background="../template/img/bg-4.png" -->
+
+## Frameworks Authoring Custom Elements
+
+* Dojo 2 -> dojo-build-widget
+* Angular -> Angular Elements
+* Vue -> Vue CLI (`--target wc`)
+
+---
+
+<!-- .slide: data-background="../template/img/bg-4.png" -->
+
+### Custom Elements with Dojo 2
+
+* Use `@dojo/cli-build-app` to build a basic app with a component.
+* Decorate component with `@customElement`
+* Use `@dojo/cli-build-widget` to extract custom element.
+
+---
+
+<!-- .slide: data-background="../template/img/bg-4.png" -->
+
+### Custom Elements with Vue
+
+* Build a Vue CLI app
+* Build with `--target=wc`
+
+---
+
+<!-- .slide: data-background="../template/img/bg-4.png" -->
+
+## Using Custom Elements
+
+Use your frameworks existing bindings for attibutes and events.
 
 ---
 
