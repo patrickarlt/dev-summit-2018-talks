@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Custom Element Demo</title>
+
+    <!-- Calcite Web for some basic page styles -->
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-rc.8/css/calcite-web.min.css">
+
+    <script src="https://rawgit.com/webcomponents/webcomponentsjs/master/webcomponents-sd-ce.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./dist/vue.js"></script>
+    <style>
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="grid-container">
+      <div class="column-24">
+        <vue-copyable-text id="copy" class="trailer-1 leader-1" label="Copy Me!" text="Copied!"></vue-copyable-text>
+
+        <vue-card class="leader-1">
+          <h4 class="trailer-0" slot="header">Content for header slot</h4>
+          <p>Content for body slot&hellip;</p>
+          <p class="font-size--2 text-dark-gray trailer-0" slot="footer">Content for footer slot.</p>
+        </vue-card>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('copy').addEventListener('copy', ()=> {
+        console.log('copy event');
+      });
+    </script>
+  </body>
+</html>

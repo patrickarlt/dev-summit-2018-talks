@@ -1,0 +1,44 @@
+{
+  "name": "vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "build:wc": "vue-cli-service build --target wc --name vue 'src/components/*.vue'",
+    "build:card": "vue-cli-service build --target wc --name vue-card 'src/components/Card.vue'",
+    "build:copyable-text": "vue-cli-service build --target wc --name vue-copyable-text 'src/components/CopyableText.vue'",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.2",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.2",
+    "@vue/cli-service": "^3.0.0-beta.2",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie 6-11"
+  ]
+}
