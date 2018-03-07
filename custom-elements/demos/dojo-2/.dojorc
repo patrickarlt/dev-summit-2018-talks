@@ -1,8 +1,7 @@
 {
 	"build-widget": {
 		"elements": [
-			"src/widgets/MenuItem",
-			"src/widgets/Menu"
+			"src/widgets/CopyableText/CopyableText"
 		]
 	}
 }

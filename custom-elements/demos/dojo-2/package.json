@@ -2,16 +2,13 @@
   "name": "custom-element",
   "version": "1.0.0",
   "scripts": {
-    "build-app": "dojo build app",
-    "build-widgets": "dojo build widget",
-    "copy-index": "shx cp output/dist/index.html src/index.html",
-    "backup-index": "shx cp src/index.html src/index.bk",
-    "reset-index": "shx mv src/index.bk src/index.html",
-    "move-dist": "shx mv output/dist/* temp-example",
-    "setup": "npm run backup-index && shx rm -rf temp-example && shx mkdir temp-example",
-    "reset": "npm run reset-index && shx mv temp-example/* output/dist/",
-    "build": "npm run setup && npm run build-app && npm run copy-index && npm run move-dist && npm run build-widgets && npm run move-dist && npm run reset",
-    "test-ci": "echo no tests"
+    "build:app": "dojo build app -m dev",
+    "build:widgets": "dojo build widget -m dev",
+    "build": "npm run build-app && npm run build-widgets",
+    "watch:widgets": "dojo build widget -m dev -w",
+    "watch:app": "dojo build -w -m=dev",
+    "serve": "http-server output/dev",
+    "start": "npm run watch:widgets & npm run watch:app & npm run serve"
   },
   "dependencies": {
     "@dojo/cli": "^0.5.0",
@@ -26,16 +23,12 @@
   "devDependencies": {
     "@dojo/cli-build-app": "~0.3.1",
     "@dojo/cli-build-widget": "~0.2.0",
-    "@dojo/cli-test-intern": "~0.5.0",
     "@dojo/loader": "~0.1.1",
     "@dojo/test-extras": "~0.6.0",
     "@types/glob": "~5.0.0",
     "@types/grunt": "~0.4.0",
     "@types/node": "^6.0.46",
-    "@types/sinon": "^1.16.35",
-    "intern": "~4.1.5",
-    "shx": "^0.2.2",
-    "sinon": "^2.0.0",
+    "http-server": "^0.11.1",
     "typescript": "~2.6.1"
   }
 }

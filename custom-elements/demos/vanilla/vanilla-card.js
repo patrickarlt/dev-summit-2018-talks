@@ -28,15 +28,17 @@ class CardElement extends HTMLElement {
 
       <section class="card-wrapper">
         <header>
-          <p>In header</p>
+          <p>HEADER</p>
           <slot name="header"></slot>
         </header>
 
         <div class="card-body">
+          <p>BODY</p>
           <slot></slot>
         </div>
 
         <footer>
+          <p>FOOTER</p>
           <slot name="footer"></slot>
         </footer>
       </section>
@@ -48,4 +50,4 @@ class CardElement extends HTMLElement {
   }
 }
 
-customElements.define('demo-card', CardElement);
+customElements.define('vanilla-card', CardElement);

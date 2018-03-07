@@ -1,0 +1,21 @@
+.root {
+	display: flex;
+}
+
+.input {
+	all: initial;
+	flex: 1 1 auto;
+	border: 1px solid #333;
+	border-right: none;
+	font-family: sans-serif;
+	padding: .5rem;
+}
+
+.button {
+	all: initial;
+	flex: 0 0 auto;
+	border: 1px solid #333;
+	background: #efefef;
+	font-family: sans-serif;
+	padding: .5rem;
+}

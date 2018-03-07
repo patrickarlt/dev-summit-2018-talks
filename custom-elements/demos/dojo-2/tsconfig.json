@@ -19,8 +19,8 @@
 		"removeComments": false,
 		"sourceMap": true,
 		"strict": true,
-		"target": "es5",
-		"types": [ "intern" ]
+		"target": "es2015",
+		"types": []
 	},
 	"include": [
 		"./src/**/*.ts",

@@ -83,4 +83,4 @@ class CopyableTextElement extends HTMLElement {
   }
 }
 
-customElements.define('demo-copyable-text', CopyableTextElement);
+customElements.define('vanilla-copyable-text', CopyableTextElement);
