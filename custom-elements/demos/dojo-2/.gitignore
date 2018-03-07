@@ -4,10 +4,8 @@
 !/tasks/*.js
 /_build
 /bower_components
-/dist
 /example
 /html-report
-/output
 /temp-example
 /node_modules
 /typings
