@@ -7,7 +7,8 @@ class Example extends WidgetBase {
 	protected render() {
 		return w(CopyableText, {
 			label: 'Copy Me',
-			text: 'Copied'
+			text: 'Copied',
+			onCopy: () => { console.log('Copy Event from Dojo 2 Widget'); }
 		});
 	}
 }

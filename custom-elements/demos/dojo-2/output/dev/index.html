@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>custom-element</title>
+	<title>Dojo 2 Custom Elements Demo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://rawgit.com/webcomponents/custom-elements/master/src/native-shim.js"></script>
 	<script src="https://rawgit.com/webcomponents/custom-elements/master/custom-elements.min.js"></script>
@@ -17,7 +17,7 @@
 			<div id="widget"></div>
 
 			<h1 class="leader-1">As a Custom Element</h1>
-			<custom-elements-copyable-text id="copy" label="Copy Me" text="Copied"></custom-elements-copyable-text>
+			<dojo-2-copyable-text id="copy" label="Copy Me" text="Copied"></dojo-2-copyable-text>
 
 			<h1 class="leader-1">A Regular Calcite Web <code>&lt;input&gt;</code></h1>
 			<input type="text">
@@ -25,7 +25,7 @@
 	</div>
 	<script>
 		document.getElementById('copy').addEventListener('copy', ()=> {
-			console.log('copy event');
+			console.log('Copy Event from Custom Element');
 		})
 	</script>
 <script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="main.js"></script></body>
