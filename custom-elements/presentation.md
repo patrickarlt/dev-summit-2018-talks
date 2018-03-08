@@ -77,8 +77,6 @@ Solve boilerplat and common issues with Custom Elements
 
 # Custom Elements with Application Frameworks
 
-Build Custom Elements from your existing application code
-
 * [Angular](https://angular.io/) -> [Angular Elements](https://github.com/angular/angular/pull/21939)
 * [Dojo 2](https://dojo.io/) -> [dojo-build-widget](https://github.com/dojo/cli-build-widget)
 * [Vue](https://github.com/vuejs/vue-cli) -> [Vue CLI (`--target wc`)](https://github.com/vuejs/vue-cli/blob/dev/docs/build-targets.md#web-component)

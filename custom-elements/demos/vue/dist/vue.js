@@ -73,19 +73,19 @@ module.exports = __webpack_require__("WkPX");
 
 /***/ }),
 
-/***/ "EUM8":
+/***/ "5LKs":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("gHG8");
+var content = __webpack_require__("z1pn");
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to Shadow Root
 var add = __webpack_require__("lQRf").default
 module.exports.__inject__ = function (shadowRoot) {
-  add("12f9b139", content, shadowRoot)
+  add("68f4caec", content, shadowRoot)
 };
 
 /***/ }),
@@ -170,6 +170,38 @@ function toComment(sourceMap) {
 	return '/*# ' + data + ' */';
 }
 
+
+/***/ }),
+
+/***/ "Gcjt":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("FZ+f")(false);
+// imports
+
+
+// module
+exports.push([module.i, "[data-v-08019b95]:host{display:block}.wrapper[data-v-08019b95]{display:-webkit-box;display:-ms-flexbox;display:flex}input[data-v-08019b95]{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;border:1px solid #333;border-right:none;font-family:sans-serif;padding:.5rem;margin:0}button[data-v-08019b95]{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;border:1px solid #333;background:#efefef;font-family:sans-serif;padding:.5rem}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "UVnd":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("Gcjt");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to Shadow Root
+var add = __webpack_require__("lQRf").default
+module.exports.__inject__ = function (shadowRoot) {
+  add("101f951f", content, shadowRoot)
+};
 
 /***/ }),
 
@@ -583,14 +615,14 @@ function normalizeComponent (
 /* harmony default export */ var Card = ({
   name: "VueCard"
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-173cf056","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/Card.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6c274f4c","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/Card.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"card-wrapper"},[_c('header',[_c('p',[_vm._v("In header")]),_vm._t("header")],2),_c('div',{staticClass:"card-body"},[_vm._t("default")],2),_c('footer',[_vm._t("footer")],2)])}
 var staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/components/Card.vue
 function injectStyle (context) {
 var i
-;(i=__webpack_require__("z5PG"),i.__inject__&&i.__inject__(context),i)
+;(i=__webpack_require__("5LKs"),i.__inject__&&i.__inject__(context),i)
 }
 /* script */
 
@@ -602,7 +634,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-173cf056"
+var __vue_scopeId__ = "data-v-6c274f4c"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 
@@ -651,14 +683,14 @@ var Component = normalizeComponent(
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-7db15a55","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/CopyableText.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-08019b95","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/CopyableText.vue
 var CopyableText_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"wrapper"},[_c('input',{ref:"input",attrs:{"type":"text"},domProps:{"value":_vm.text}}),_c('button',{on:{"click":_vm.copyText}},[_vm._v(_vm._s(_vm.label))])])}
 var CopyableText_staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/components/CopyableText.vue
 function CopyableText_injectStyle (context) {
 var i
-;(i=__webpack_require__("EUM8"),i.__inject__&&i.__inject__(context),i)
+;(i=__webpack_require__("UVnd"),i.__inject__&&i.__inject__(context),i)
 }
 /* script */
 
@@ -670,7 +702,7 @@ var CopyableText___vue_template_functional__ = false
 /* styles */
 var CopyableText___vue_styles__ = CopyableText_injectStyle
 /* scopeId */
-var CopyableText___vue_scopeId__ = "data-v-7db15a55"
+var CopyableText___vue_scopeId__ = "data-v-08019b95"
 /* moduleIdentifier (server only) */
 var CopyableText___vue_module_identifier__ = null
 
@@ -700,36 +732,6 @@ window.customElements.define('vue-card', vue_wc_wrapper(external__Vue__default.a
 
 
 window.customElements.define('vue-copyable-text', vue_wc_wrapper(external__Vue__default.a, components_CopyableText))
-
-/***/ }),
-
-/***/ "d0Tp":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("FZ+f")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".card-wrapper[data-v-173cf056]{border:1px solid #efefef}header[data-v-173cf056]{padding:.25rem;background:#f8f8f8;border-bottom:1px solid #efefef}.card-body[data-v-173cf056]{padding:.25rem}footer[data-v-173cf056]{padding:.25rem;background:#f8f8f8;border-top:1px solid #efefef}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "gHG8":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("FZ+f")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".wrapper[data-v-7db15a55]{display:-webkit-box;display:-ms-flexbox;display:flex}input[data-v-7db15a55]{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;border:1px solid #333;border-right:none;font-family:sans-serif;padding:.5rem;margin:0}button[data-v-7db15a55]{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;border:1px solid #333;background:#efefef;font-family:sans-serif;padding:.5rem}", ""]);
-
-// exports
-
 
 /***/ }),
 
@@ -863,20 +865,18 @@ module.exports = Vue;
 
 /***/ }),
 
-/***/ "z5PG":
+/***/ "z1pn":
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+exports = module.exports = __webpack_require__("FZ+f")(false);
+// imports
 
-// load the styles
-var content = __webpack_require__("d0Tp");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to Shadow Root
-var add = __webpack_require__("lQRf").default
-module.exports.__inject__ = function (shadowRoot) {
-  add("b499730c", content, shadowRoot)
-};
+
+// module
+exports.push([module.i, "[data-v-6c274f4c]:host{display:block}.card-wrapper[data-v-6c274f4c]{border:1px solid #efefef}header[data-v-6c274f4c]{padding:.25rem;background:#f8f8f8;border-bottom:1px solid #efefef}.card-body[data-v-6c274f4c]{padding:.25rem}footer[data-v-6c274f4c]{padding:.25rem;background:#f8f8f8;border-top:1px solid #efefef}", ""]);
+
+// exports
+
 
 /***/ })
 

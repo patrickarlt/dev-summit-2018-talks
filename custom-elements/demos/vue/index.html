@@ -10,6 +10,10 @@
     <script src="https://unpkg.com/vue"></script>
     <script src="./dist/vue.js"></script>
     <style>
+      vue-card, vue-copyable-text {
+        display: block;
+      }
+
       p {
         color: red;
       }
@@ -19,12 +23,13 @@
   <body>
 
     <div class="grid-container">
-      <div class="column-24">
-        <vue-copyable-text id="copy" class="trailer-1 leader-1" label="Copy Me!" text="Copied!"></vue-copyable-text>
+      <div class="column-24 leader-2">
+        <vue-copyable-text id="copy" label="Copy Me!" text="Copied!"></vue-copyable-text>
 
-        <vue-card class="leader-1">
+        <vue-card class="leader-1 trailer-1">
           <h4 class="trailer-0" slot="header">Content for header slot</h4>
           <p>Content for body slot&hellip;</p>
+          <vue-copyable-text class="trailer-1 leader-1" label="Copy Me!" text="Copied!"></vue-copyable-text>
           <p class="font-size--2 text-dark-gray trailer-0" slot="footer">Content for footer slot.</p>
         </vue-card>
       </div>
